@@ -1,0 +1,5 @@
+package com.init.products.rest;
+
+public class ProductsREST {
+
+}
