@@ -10,8 +10,8 @@ import javax.persistence.Table;
 @Entity
 @Table(name="products")
 public class Product {
-	@Id
 	@Column(name="id")
+	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
@@ -19,6 +19,7 @@ public class Product {
 	private String name;
 	
 	public Long getId() {
+		
 		return id;
 	}
 	public void setId(Long id) {
@@ -30,5 +31,4 @@ public class Product {
 	public void setName(String name) {
 		this.name = name;
 	}
-
-}
+	}
